@@ -1,0 +1,32 @@
+meta {
+  name: Get Decision
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/v1/decision
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "subject": {
+      "token": "test"
+    },
+    "authorization_details": [
+      {
+        "type": "test-type",
+        "actions": [
+          "test"
+        ]
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
