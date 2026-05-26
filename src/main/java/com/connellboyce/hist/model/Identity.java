@@ -1,4 +1,5 @@
 package com.connellboyce.hist.model;
 
-public class Identity {
-}
+import java.util.List;
+
+public record Identity(String id, List<String> amr) {}

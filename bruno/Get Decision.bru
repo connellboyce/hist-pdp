@@ -13,14 +13,18 @@ post {
 body:json {
   {
     "subject": {
-      "token": "test"
+      "token": "{{subject.token}}"
     },
     "authorization_details": [
       {
-        "type": "test-type",
+        "type": "urn:connellboyce:minecraft-server",
         "actions": [
-          "test"
-        ]
+          "start"
+        ],
+        "resources": {
+          "minecraft_server_ip": "{{minecraft.server.ip}}",
+          "minecraft_username": "{{minecraft.username}}"
+        }
       }
     ]
   }

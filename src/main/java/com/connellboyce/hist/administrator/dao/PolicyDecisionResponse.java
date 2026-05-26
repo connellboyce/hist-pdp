@@ -1,8 +1,8 @@
 package com.connellboyce.hist.administrator.dao;
 
-import com.connellboyce.hist.engine.Decision;
-import com.connellboyce.hist.engine.model.Advice;
-import com.connellboyce.hist.engine.model.Obligation;
+import com.connellboyce.hist.model.Advice;
+import com.connellboyce.hist.model.Decision;
+import com.connellboyce.hist.model.Obligation;
 
 import java.util.List;
 

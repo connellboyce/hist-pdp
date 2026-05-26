@@ -15,6 +15,11 @@ public record PolicyDecisionRequest(
 
 	public record Subject(String token) {}
 
-	public record AuthorizationDetail(String type, List<String> actions) {}
+	public record AuthorizationDetail(String type,
+	                                  List<String> actions,
+	                                  Resources resources) {}
+
+	public record Resources(@JsonProperty("minecraft_server_ip") String minecraftServerIP,
+	                       @JsonProperty("minecraft_username") String minecraftServerUsername) {}
 
 }

@@ -1,14 +1,13 @@
 package com.connellboyce.hist.logging;
 
-public enum EventResult {
+public enum EventOutcome {
 	SUCCESS("success"),
 	FAILURE("failure"),
-	INDETERMINATE("indeterminate"),
-	UNDECIDED("undecided");
+	UNKNOWN("unknown");
 
 	private final String name;
 
-	EventResult(String name) {
+	EventOutcome(String name) {
 		this.name = name;
 	}
 

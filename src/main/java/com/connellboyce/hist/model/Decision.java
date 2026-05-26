@@ -1,4 +1,4 @@
-package com.connellboyce.hist.engine;
+package com.connellboyce.hist.model;
 
 public enum Decision {
 	PERMIT("permit"),

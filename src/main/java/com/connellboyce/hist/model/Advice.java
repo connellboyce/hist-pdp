@@ -1,4 +1,4 @@
-package com.connellboyce.hist.engine.model;
+package com.connellboyce.hist.model;
 
 public record Advice() {
 }
